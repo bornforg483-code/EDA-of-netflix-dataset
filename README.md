@@ -1,9 +1,6 @@
 # 🎬 Netflix Movies & TV Shows — Exploratory Data Analysis (EDA)
 ### 🔥 Uncovering hidden patterns, trends & insights from Netflix's global content library
 
-<p align="center">
-  <img src="https://i.imgur.com/qW3H7yT.gif" width="700">
-</p>
 
 ---
 
