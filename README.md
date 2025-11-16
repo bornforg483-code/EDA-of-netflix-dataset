@@ -1,2 +1,148 @@
-# EDA-of-netflix-dataset
-This project explores the Netflix dataset, which contains details about movies and TV shows available on the platform. The objective is to perform exploratory data analysis (EDA) to uncover insights about content trends, genres, ratings, and country-wise availability.
+# 🎬 Netflix Movies & TV Shows — Exploratory Data Analysis (EDA)
+### 🔥 Uncovering hidden patterns, trends & insights from Netflix's global content library
+
+<p align="center">
+  <img src="https://i.imgur.com/qW3H7yT.gif" width="700">
+</p>
+
+---
+
+## 🚀 Project Overview
+This project explores the *Netflix dataset*, which contains detailed information about movies and TV shows available on the platform.  
+Using Python-based *Exploratory Data Analysis (EDA)*, we uncover:
+
+✔ Content trends  
+✔ Genre popularity  
+✔ Ratings distribution  
+✔ Country-wise analysis  
+✔ Movie vs TV Show comparison  
+✔ Director & cast insights  
+✔ Duration patterns  
+✔ Heatmaps showing yearly additions  
+
+This project is perfect for *Data Science practice, EDA portfolio building, and storytelling*.
+
+---
+
+## 📂 Dataset Information
+
+The dataset contains *7,789 rows* and *11 columns*:
+
+| Column | Description |
+|--------|-------------|
+| Show_Id | Unique identifier |
+| Category | Movie / TV Show |
+| Title | Name of the content |
+| Director | Director(s) |
+| Cast | Actors |
+| Country | Country of origin |
+| Release_Date | Date added to Netflix |
+| Rating | TV/Movie rating |
+| Duration | Runtime or seasons |
+| Type | Genre |
+| Description | Short summary |
+
+---
+
+## 🛠 Tech Stack
+- Python  
+- Pandas  
+- NumPy  
+- Matplotlib  
+- Seaborn  
+- Jupyter Notebook  
+
+---
+
+## 🧠 Key Analyses Performed
+
+### 🔹 1. Data Cleaning
+- Handling missing values  
+- Converting date columns  
+- Extracting release years  
+- Standardizing categories  
+
+### 🔹 2. Univariate Analysis
+- Most common ratings  
+- Top genres  
+- Popular countries  
+- Duration distribution  
+
+### 🔹 3. Bivariate & Multivariate Analysis
+- Category vs Country  
+- Type vs Rating  
+- Yearly content trends  
+- Director/Actor frequency  
+
+### 🔹 4. Visualizations
+- Bar charts  
+- Count plots  
+- Heatmaps  
+- Trend lines  
+- Pie charts  
+
+---
+
+## 🔥 Sample Heatmap Code
+
+python
+df['Release_Date'] = pd.to_datetime(df['Release_Date'], errors='coerce')
+df['Release_Year'] = df['Release_Date'].dt.year
+
+heatmap_data = pd.crosstab(df['Release_Year'], df['Type'])
+
+plt.figure(figsize=(12,6))
+sns.heatmap(heatmap_data, annot=True, fmt='d', cmap='Reds')
+plt.title("Content Added Per Year (Movies vs TV Shows)")
+plt.show()
+
+
+---
+
+## 📁 Project Structure
+
+
+📦 Netflix-EDA
+┣ 📜 Netflix_EDA.ipynb
+┣ 📁 dataset/
+┃ ┗ Netflix Dataset.csv
+┣ 📄 README.md
+┗ 📄 requirements.txt
+
+
+---
+
+## ✨ Insights Highlight
+
+✔ Netflix uploaded the most content between *2018–2020*  
+✔ *Movies dominate* (approx. 70%)  
+✔ Most content originates from the *United States*  
+✔ *TV-MA* is the most common rating  
+✔ Documentaries, dramas, and international titles have grown rapidly  
+
+---
+
+## 🚀 How to Run the Project
+
+bash
+git clone https://github.com/your-username/netflix-eda.git
+cd netflix-eda
+pip install -r requirements.txt
+jupyter notebook
+
+
+Open the Netflix_EDA.ipynb file and execute all cells.
+
+---
+
+## ⭐ Support
+If you like this project, please consider giving it a *star ⭐ on GitHub*.  
+It encourages me to create more beginner-friendly and professional datasets & EDA projects!
+
+---
+
+## 👨‍💻 Author
+**Ahath Ali khan **  
+🎓 AI/ML Engineer  
+
+---
