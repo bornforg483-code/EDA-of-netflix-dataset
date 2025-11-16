@@ -80,19 +80,6 @@ The dataset contains *7,789 rows* and *11 columns*:
 
 ---
 
-## 🔥 Sample Heatmap Code
-
-python
-df['Release_Date'] = pd.to_datetime(df['Release_Date'], errors='coerce')
-df['Release_Year'] = df['Release_Date'].dt.year
-
-heatmap_data = pd.crosstab(df['Release_Year'], df['Type'])
-
-plt.figure(figsize=(12,6))
-sns.heatmap(heatmap_data, annot=True, fmt='d', cmap='Reds')
-plt.title("Content Added Per Year (Movies vs TV Shows)")
-plt.show()
-
 
 ---
 
@@ -139,7 +126,7 @@ It encourages me to create more beginner-friendly and professional datasets & ED
 ---
 
 ## 👨‍💻 Author
-**Ahath Ali khan **  
+**Ahath Ali Khan**  
 🎓 AI/ML Engineer  
 
 ---
